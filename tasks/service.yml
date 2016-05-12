@@ -5,3 +5,7 @@
     name: "{{ pm2_service_name }}"
     state: "{{ pm2_service_state }}"
     enabled: "{{ pm2_service_enabled }}"
+- name: Save state
+  command: pm2 save
+- name: Dump state
+  command: pm2 dump
